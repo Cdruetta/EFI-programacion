@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escapada Perfecta</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"
+    />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" 
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bulma.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Contenedor Principal -->
+    <div class="main-container">
+      <!-- Navbar -->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="../index.html">
+                <img src="../img/Sin título-1.png" alt="Logo de Agencia de Viajes" style="max-height: 150px;">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" onclick="toggleBurger()">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <a href="../destinos.html" class="navbar-item has-text-white">Destinos</a>
+                <a href="../actividades.html" class="navbar-item has-text-white">Actividades</a>
+                <a href="../blog.html" class="navbar-item has-text-white">Blog</a>
+                <a href="hoteles.html" class="navbar-item has-text-white">Hoteles</a>
+                <a href="paquetes-turisticos.html" class="navbar-item has-text-white">Paquetes turisticos</a>
+                <a href="vuelos.html" class="navbar-item has-text-white">Vuelos</a>
+                <a href="../login.html" class="navbar-item has-text-white">Login</a>
+            </div>
+        </div>
+    </nav>
+
+      <!-- Hero Section -->
+      <section class="hero is-info is-small">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h2
+              class="title is-2"
+              style="color: var(--text-color); margin-bottom: 1rem"
+            >
+              Explora el mundo con nosotros
+            </h2>
+            <p
+              class="subtitle is-4"
+              style="color: var(--text-color); margin-bottom: 1.5rem"
+            >
+              Encuentra los mejores destinos, hoteles y vehículos para tu
+              próximo viaje.
+            </p>
+            <a href="paquetes-turisticos.html" class="button is-danger is-large">¡Reserva Ahora!</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cards Section -->
+      <div class="columns is-multiline mt-5"> <!-- Aumento margen superior -->
+        <!-- Paquete 1 -->
+        <div class="column is-one-fourth mb-6"> <!-- Cambié is-one-third por is-one-fourth -->
+          <div class="card is-small m-4"> <!-- Aumento margen alrededor de la tarjeta -->
+            <header class="card-header">
+              <p class="card-header-title">OFERTA Paquete 1</p>
+            </header>
+            <div class="card-image">
+              <figure class="image is-1by1">
+                <img src="img/RIVIERA.jpg" alt="Imagen del paquete">
+              </figure>
+            </div>
+            <div class="card-content p-4"> <!-- Más padding dentro de la tarjeta -->
+              <div class="content">
+                Riviera Maya - Mexico - con vuelos desde Cordoba 
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Detalles</a>
+              <a href="#" class="card-footer-item">Reservar</a>
+            </footer>
+          </div>
+        </div>
+
+        <!-- Paquete 2 -->
+        <div class="column is-one-fourth mb-6">
+          <div class="card is-small m-4">
+            <header class="card-header">
+              <p class="card-header-title">OFERTA Paquete 2</p>
+            </header>
+            <div class="card-image">
+              <figure class="image is-1by1">
+                <img src="img/3402_panama2.jpg" alt="Imagen del paquete">
+              </figure>
+            </div>
+            <div class="card-content p-4">
+              <div class="content">
+                Panama - Costa Rica - con vuelos desde Cordoba
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Detalles</a>
+              <a href="#" class="card-footer-item">Reservar</a>
+            </footer>
+          </div>
+        </div>
+
+        <!-- Paquete 3 -->
+        <div class="column is-one-fourth mb-6">
+          <div class="card is-small m-4">
+            <header class="card-header">
+              <p class="card-header-title">OFERTA Paquete 3</p>
+            </header>
+            <div class="card-image">
+              <figure class="image is-1by1">
+                <img src="img/3481_recife1.jpg" alt="Imagen del paquete">
+              </figure>
+            </div>
+            <div class="card-content p-4">
+              <div class="content">
+                Recife - Brasil - con vuelos desde Cordoba
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Detalles</a>
+              <a href="#" class="card-footer-item">Reservar</a>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <!-- Footer -->
+      <div id="footer"></div>
+
+      <script src="js/footer.js"></script>
+
+      <script>
+        function toggleBurger() {
+          var burger = document.querySelector(".navbar-burger");
+          var menu = document.querySelector("#navbarMenu");
+          burger.classList.toggle("is-active");
+          menu.classList.toggle("is-active");
+        }
+      </script>
+  </body>
+</html>
+
